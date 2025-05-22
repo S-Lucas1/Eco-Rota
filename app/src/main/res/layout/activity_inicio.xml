@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/main">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="24dp">
+
+            <!-- Imagem logo1 (topo: caminhão e cidade) -->
+            <ImageView
+                android:id="@+id/imgLogo1"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:src="@drawable/logo1"
+                android:layout_marginTop="24dp" />
+
+            <!-- Imagem logo2 (ícone do caminhão) -->
+            <ImageView
+                android:id="@+id/imgLogo2"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:src="@drawable/logo2"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Imagem logo3 (texto EcoRota estilizado) -->
+            <ImageView
+                android:id="@+id/imgLogo3"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo3"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Botão Entrar -->
+            <Button
+                android:id="@+id/btnEntrar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="@string/botao_login"
+                android:backgroundTint="@color/eco_primary"
+                android:textColor="@color/white"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Botão Cadastrar -->
+            <Button
+                android:id="@+id/btnCadastrar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="@string/botao_cadastro"
+                android:textColor="@color/eco_primary"
+                android:background="@drawable/botao_borda"
+                android:padding="12dp" />
+        </LinearLayout>
+    </ScrollView>
+    
+    <!-- Barra de Navegação Inferior -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_nav_menu" />
+</LinearLayout>

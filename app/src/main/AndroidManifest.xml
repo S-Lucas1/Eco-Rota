@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">    <!-- Permissões necessárias para usar localização e Google Maps -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+    <!-- Garantir que o Google Play Services e Maps estão disponíveis -->
+    <queries>
+        <package android:name="com.google.android.gms" />
+        <package android:name="com.google.android.apps.maps" />
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="https" />
+        </intent>
+    </queries>
+
+    <application
+        android:name=".EcoRotaApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EcoRota"
+        android:usesCleartextTraffic="true">
+          <!-- Metadata necessário para o Google Play Services -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        
+        <!-- Metadata para chave API do Google Maps -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCjZzn4bja_CcqplA7avKskztgFKOLb6DQ" />
+        <activity
+            android:name=".Mapa"
+            android:exported="true" />
+        <activity
+            android:name=".GerarRotaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".InicioActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />        <activity
+            android:name=".CadastroActivity"
+            android:exported="true" /><activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LixeirasActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CadastroLixeiraActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

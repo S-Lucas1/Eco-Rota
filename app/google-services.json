@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "813166123897",
+    "project_id": "ecorota-2025",
+    "storage_bucket": "ecorota-2025.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:813166123897:android:f4ebdc8dd18373f6b2eda8",
+        "android_client_info": {
+          "package_name": "com.example.ecorota"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjZzn4bja_CcqplA7avKskztgFKOLb6DQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

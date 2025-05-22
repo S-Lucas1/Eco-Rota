@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Imagem do Mapa -->
+    <ImageView
+        android:id="@+id/imgMapa"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/mapa_exemplo"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/mapa_exemplo_desc" />
+
+    <!-- Botão para gerar rota de coleta -->
+    <Button
+        android:id="@+id/btnGerarRotaLixeirasChecias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gerar Rota para Lixeiras Cheias"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/eco_primary"
+        android:textColor="#FFFFFF" />
+
+    <!-- Barra de Navegação Inferior -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_nav_menu" />
+</LinearLayout>

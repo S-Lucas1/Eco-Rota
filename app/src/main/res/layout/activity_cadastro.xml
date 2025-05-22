@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/main_cadastro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- LOGO -->
+        <ImageView
+            android:id="@+id/imgLogo2"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:src="@drawable/logo2"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- TÍTULO -->
+        <TextView
+            android:id="@+id/txtTituloCadastro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Criar Nova Conta"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- INPUT NOME -->
+        <EditText
+            android:id="@+id/edtNomeCadastro"
+            android:layout_width="326dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/campo_email"
+            android:hint="Digite seu nome completo"
+            android:inputType="textPersonName"
+            android:padding="12dp" />
+
+        <!-- INPUT EMAIL -->
+        <EditText
+            android:id="@+id/edtEmailCadastro"
+            android:layout_width="326dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/campo_email"
+            android:hint="Digite seu email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp" />
+
+        <!-- INPUT TELEFONE -->
+        <EditText
+            android:id="@+id/edtTelefoneCadastro"
+            android:layout_width="326dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/campo_email"
+            android:hint="Digite seu telefone"
+            android:inputType="phone"
+            android:padding="12dp" />
+
+        <!-- INPUT SENHA -->
+        <EditText
+            android:id="@+id/edtSenhaCadastro"
+            android:layout_width="326dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/campo_email"
+            android:hint="Digite sua senha"
+            android:inputType="textPassword"
+            android:padding="12dp" />        <!-- INPUT CONFIRMAR SENHA -->
+        <EditText
+            android:id="@+id/edtConfirmarSenhaCadastro"
+            android:layout_width="326dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/campo_email"
+            android:hint="Confirme sua senha"
+            android:inputType="textPassword"
+            android:padding="12dp" />
+
+        <!-- PROGRESS BAR -->
+        <ProgressBar
+            android:id="@+id/progressBarCadastro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:visibility="gone" />
+            
+        <!-- BOTÃO CADASTRAR -->
+        <Button
+            android:id="@+id/btnCadastrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar"
+            android:backgroundTint="@color/eco_primary"
+            android:textColor="@color/white"
+            android:padding="12dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- BOTÃO VOLTAR -->
+        <Button
+            android:id="@+id/btnVoltar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Voltar para o Login"
+            android:backgroundTint="#BBDEFB"
+            android:textColor="@color/black"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+</ScrollView>

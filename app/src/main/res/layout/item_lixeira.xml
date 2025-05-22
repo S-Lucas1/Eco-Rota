@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/ivLixeiraThumb"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/lixeira_exemplo"
+            android:contentDescription="Miniatura da lixeira"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/tvLixeiraId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID: L001"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toEndOf="@+id/ivLixeiraThumb"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvLixeiraLocalizacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Lat: -23.500, Long: -47.430"
+            app:layout_constraintStart_toStartOf="@+id/tvLixeiraId"
+            app:layout_constraintTop_toBottomOf="@+id/tvLixeiraId" />
+
+        <TextView
+            android:id="@+id/tvLixeiraNivel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Nível: 85%"
+            app:layout_constraintStart_toStartOf="@+id/tvLixeiraLocalizacao"
+            app:layout_constraintTop_toBottomOf="@+id/tvLixeiraLocalizacao" />
+
+        <TextView
+            android:id="@+id/tvLixeiraStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Status: CHEIA"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tvLixeiraNivel"
+            app:layout_constraintTop_toBottomOf="@+id/tvLixeiraNivel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
